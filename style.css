@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lora', serif;
+}
+:root{
+    --jasmin: #c159d6;
+    --roxinho: #5f1ecf;
+    --black: black;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1579546928686-286c9fbde1ec?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sb3IlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+}
+h1{
+    
+    font-weight: 700;
+    font-size: 3.5em;
+    color:var(--roxinho);
+}
+h2{
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 1.5em;
+    color:var(--roxinho);
+}
+h4{
+    font-weight: 400;
+    font-size: 1em;
+    color: black;
+}
+li{
+    display: inline;
+    align-items: center;  
+}
+
+a{
+text-decoration: none;
+}
+
+.perfil {
+max-width: 15em;
+border-radius: 50%;
+padding: 25px;
+}
+
+.container{
+    display: flex;
+    width:70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.cabecalho{
+    background-color:var(--jasmin); 
+    display: flex;
+    padding: 10px 0 ;
+}
+
+.about-me {
+    background-color: #ffb6c0 ;
+}
+
+.skills {
+    background-color: #c6e5b1 ;
+}
+.skills h1{
+    text-align: center;
+}
+
+.card-area {
+    display:flex;
+    flex-wrap: wrap ;
+}
+
+.card{
+    border: 5px solid white;
+    width: 25%;
+    padding: 2%;
+    margin: 10px auto;
+    text-align: center;  
+}
+.card h1{
+    font-size: 2em;
+}
+
+.icon{
+    max-width: 100px;
+    width: 5em;
+    
+}
+
+.projects{
+    background-color: #c6e5b1;
+}
+.projects h1{
+    text-align: center;
+}
+
+.contatc {
+    background-color: #ffb6c0 ;
+    text-align: center;
+    font-size: 5px;
+}
+
+.social {
+    text-align: center;
+    padding: 10px 0 ;
+}
+.social-icon {
+    width: 32px;
+    margin: 5px;
+}
+footer {
+    font-size: 1em;
+    background-color: var(--jasmin);
+}
+
+
+@media(max-width: 850px) {
+    .container{
+        flex-direction: column;
+    }
+    .container div{
+        text-align: center;
+    }
+    .skills h1{
+        text-align: center;
+    }
+    .card-area{
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        text-align: center;
+        border: 5px solid white;
+        width: 80%;
+        margin-top: 15px;
+    }
+}
